@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-gamin-dev-114350-authRole",
+            "UnauthRoleArn": "arn:aws:iam::797491509632:role/amplify-gamin-dev-114350-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::797491509632:role/amplify-gamin-dev-114350-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-gamin-dev-114350-deployment",
+            "UnauthRoleName": "amplify-gamin-dev-114350-unauthRole",
+            "StackName": "amplify-gamin-dev-114350",
+            "StackId": "arn:aws:cloudformation:us-east-1:797491509632:stack/amplify-gamin-dev-114350/b6de1c20-9142-11ea-a06d-12bdd946785e"
+        }
+    }
+}
