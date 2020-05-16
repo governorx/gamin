@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import Main from './Main'
 import Navpan from '../components/Navpan';
 import './App.css';
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+Amplify.configure(awsconfig);
 
-export default class App extends Component {
+class App extends Component {
 
   /** Constructor of parent component.
    * For now, globally needed variables will be declared in this state.
@@ -33,9 +37,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <AmplifySignOut /> {/**Big orange sign out button, Later will be replaced with logout button using Auth API**/}
         <Main changePage={this.changePage.bind(this)} page={this.state.page} />
         <Navpan changePage={this.changePage.bind(this)} />
       </div>
     );
   }
 }
+
+export default withAuthenticator(App, { includeGreetings: false });

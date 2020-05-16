@@ -1,1 +1,9 @@
-{}
+{
+	"auth": {
+		"gamin823484ec": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
